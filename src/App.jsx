@@ -73,7 +73,7 @@ function WisdomNavbar() {
 
         <div className="hidden md:block">
           <button
-            onClick={() => scrollTo('#join')}
+            onClick={() => window.open('https://www.investraders.net/', '_blank')}
             className="px-5 py-2 rounded-lg text-sm font-semibold text-white transition-transform hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #f5d77a, #d4af37)', boxShadow: '0 4px 20px rgba(212,175,55,0.35)' }}
           >
@@ -102,7 +102,7 @@ function WisdomNavbar() {
                 </button>
               ))}
               <button
-                onClick={() => scrollTo('#join')}
+                onClick={() => window.open('https://www.investraders.net/', '_blank')}
                 className="mt-2 py-2.5 rounded-lg text-sm font-semibold text-white"
                 style={{ background: 'linear-gradient(135deg, #f5d77a, #d4af37)' }}
               >
@@ -274,7 +274,7 @@ function WisdomHero() {
             Explore Our Vision <ArrowRight className="w-4 h-4" />
           </button>
           <button
-            onClick={() => scrollTo('#join')}
+            onClick={() => window.open('https://www.investraders.net/', '_blank')}
             className="px-7 py-3.5 rounded-lg font-semibold border transition-colors"
             style={{ borderColor: 'rgba(184,134,11,0.4)', color: '#b8860b', background: 'rgba(212,175,55,0.06)' }}
           >
