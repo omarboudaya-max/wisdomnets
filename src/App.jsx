@@ -176,7 +176,7 @@ function HumanMachineFlow() {
           >
             <User className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-600" />
           </motion.div>
-          <span className="text-sm font-bold tracking-[0.2em] text-cyan-700">HUMANITY</span>
+          <span className="text-sm font-bold tracking-[0.2em] text-cyan-700">HUMAN</span>
         </div>
         <motion.div
           animate={{ scale: [0.95, 1.05, 0.95], rotate: [0, 5, -5, 0] }}
@@ -846,7 +846,7 @@ function CinecaLogo() {
 }
 
 const PARTNERS = [
-  { Comp: AIHubLogo, label: 'UNDP Initiative', url: 'https://www.undp.org/romecentre/ai-hub-sustainable-development', accent: '#16a34a' },
+  { Comp: AIHubLogo, label: 'UNDP Initiative', url: 'https://aihubfordevelopment.org/', accent: '#16a34a' },
   { Comp: MicrosoftLogo, label: 'Technical Partner', url: 'https://www.microsoft.com', accent: '#00A4EF' },
   { Comp: AWSLogo, label: 'Technical Partner', url: 'https://aws.amazon.com', accent: '#FF9900' },
   { Comp: CinecaLogo, label: 'Technical Partner', url: 'https://www.cineca.it', accent: '#0093DD' },
