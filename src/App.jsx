@@ -130,6 +130,77 @@ function Particle({ delay, duration, x, y, size, color }) {
   );
 }
 
+function HumanMachineFlow() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+      className="relative w-full max-w-3xl mx-auto h-48 sm:h-64 mb-8 flex items-center justify-center pointer-events-none"
+    >
+      <motion.div
+        className="absolute rounded-full border border-dashed"
+        style={{ borderColor: 'rgba(15,23,42,0.1)', width: '280px', height: '280px' }}
+        animate={{ rotate: 360 }}
+        transition={{ duration: 40, repeat: Infinity, ease: 'linear' }}
+      >
+        <div className="absolute w-3 h-3 rounded-full bg-purple-400 blur-[1px]" style={{ top: '-6px', left: '50%', transform: 'translateX(-50%)' }} />
+        <div className="absolute w-2 h-2 rounded-full bg-yellow-400 blur-[1px]" style={{ top: '15%', right: '10%' }} />
+        <div className="absolute w-2 h-2 rounded-full bg-cyan-400 blur-[1px]" style={{ bottom: '10%', left: '20%' }} />
+      </motion.div>
+      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 600 200">
+        <defs>
+          <linearGradient id="gradient-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#0891b2" />
+            <stop offset="50%" stopColor="#d4af37" />
+            <stop offset="100%" stopColor="#7c3aed" />
+          </linearGradient>
+        </defs>
+        <motion.path
+          d="M 150 100 C 150 40, 300 40, 300 100 C 300 160, 450 160, 450 100 C 450 40, 300 40, 300 100 C 300 160, 150 160, 150 100 Z"
+          fill="none"
+          stroke="url(#gradient-flow)"
+          strokeWidth="2.5"
+          strokeDasharray="6 8"
+          initial={{ strokeDashoffset: 100 }}
+          animate={{ strokeDashoffset: 0 }}
+          transition={{ duration: 2, repeat: Infinity, ease: 'linear' }}
+        />
+      </svg>
+      <div className="relative z-10 flex items-center justify-between w-full px-4 sm:px-24">
+        <div className="flex flex-col items-center gap-4">
+          <motion.div
+            animate={{ y: [-5, 5, -5] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-24 h-24 sm:w-28 sm:h-28 rounded-[2rem] flex items-center justify-center bg-white border border-cyan-100 shadow-[0_10px_40px_rgba(34,211,238,0.2)]"
+          >
+            <User className="w-10 h-10 sm:w-12 sm:h-12 text-cyan-600" />
+          </motion.div>
+          <span className="text-sm font-bold tracking-[0.2em] text-cyan-700">HUMANITY</span>
+        </div>
+        <motion.div
+          animate={{ scale: [0.95, 1.05, 0.95], rotate: [0, 5, -5, 0] }}
+          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(212,175,55,0.4)]"
+          style={{ background: 'linear-gradient(135deg, #fceabb, #f8b500)' }}
+        >
+          <Sparkles className="w-10 h-10 sm:w-12 sm:h-12 text-slate-900" />
+        </motion.div>
+        <div className="flex flex-col items-center gap-4">
+          <motion.div
+            animate={{ y: [5, -5, 5] }}
+            transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-24 h-24 sm:w-28 sm:h-28 rounded-[2rem] flex items-center justify-center bg-white border border-purple-100 shadow-[0_10px_40px_rgba(167,139,250,0.2)]"
+          >
+            <Bot className="w-10 h-10 sm:w-12 sm:h-12 text-purple-600" />
+          </motion.div>
+          <span className="text-sm font-bold tracking-[0.2em] text-purple-700">MACHINE</span>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
 function WisdomHero() {
   const scrollTo = (href) => {
     const el = document.querySelector(href);
@@ -164,6 +235,8 @@ function WisdomHero() {
         >
           <Cpu className="w-3.5 h-3.5" /> The Future of Intelligence
         </motion.div>
+
+        <HumanMachineFlow />
 
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
