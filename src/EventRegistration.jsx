@@ -20,6 +20,7 @@ const NAV_LINKS = [
   { label: "الرئيسية", href: "#hero" },
   { label: "لماذا البرنامج", href: "#vision" },
   { label: "المحاور", href: "#program" },
+  { label: "المدرب", href: "#trainer" },
   { label: "التسجيل", href: "#registration" }
 ];
 
@@ -414,6 +415,44 @@ export default function EventRegistration() {
               "هذا البرنامج لا يهدف فقط إلى إعداد مدربين، بل إلى بناء حركة فكرية وإدارية تجعل من ثقافة Investrade نموذجاً معاصراً للإدارة يعتمد على الفرص، والتواصل، والذكاء الاصطناعي، وصناعة الأثر"
             </blockquote>
           </motion.div>
+        </div>
+      </section>
+
+      {/* ── TRAINER SECTION ── */}
+      <section id="trainer" className="py-24 bg-obsidian border-t border-white/[0.04] relative overflow-hidden" dir="rtl">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.05),transparent_70%)]" />
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+            <span className="text-cyan-data text-sm tracking-widest">خبير البرنامج</span>
+            <h2 className="font-heading font-bold text-3xl md:text-5xl text-platinum mt-4 mb-4">تعرّف على <span className="text-gold">المدرب</span></h2>
+            <div className="w-20 h-0.5 bg-gold mx-auto" />
+          </motion.div>
+          
+          <div className="grid md:grid-cols-12 gap-12 items-center">
+            <motion.div initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="md:col-span-5 flex justify-center">
+              <div className="relative w-72 h-72 md:w-full md:h-auto md:aspect-[4/5]">
+                {/* 
+                  NOTE: Replace "/trainer.png" with the actual URL of the uploaded image
+                */}
+                <img src="/trainer.png" alt="د. ماهر خضر" className="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10 border border-white/10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent rounded-2xl z-20" />
+                <div className="absolute -inset-4 border border-gold/20 rounded-2xl -z-10 transform rotate-3 transition-transform duration-500 hover:rotate-6" />
+                <div className="absolute -inset-4 border border-cyan-data/20 rounded-2xl -z-10 transform -rotate-3 transition-transform duration-500 hover:-rotate-6" />
+              </div>
+            </motion.div>
+            
+            <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="md:col-span-7">
+              <h3 className="font-heading font-bold text-3xl text-platinum mb-2">د. ماهر خضر</h3>
+              <p className="text-gold text-lg font-medium mb-2">دكتوراه تدريب الأعمال</p>
+              <p className="text-cyan-data text-sm mb-6 leading-relaxed">رائد إدارة التغيير والاستشراف الاستراتيجي في الوطن العربي<br/>كبير خبراء استراتيجيات الذكاء الاصطناعي والحوكمة الذكية</p>
+              
+              <div className="space-y-4 text-platinum/70 leading-relaxed text-sm md:text-base text-justify">
+                <p>يُعد الدكتور ماهر خضر من أبرز الخبراء العرب في مجالات إدارة التغيير، والاستشراف الاستراتيجي، وحوكمة الذكاء الاصطناعي، حيث كرّس مسيرته العلمية والمهنية لتطوير نماذج حديثة في القيادة والتحول المؤسسي، وتمكين المؤسسات من استشراف المستقبل والاستعداد لتحديات الاقتصاد الرقمي. ويُعرف بكونه من أوائل الخبراء العرب الذين طرحوا التحول من <span className="text-gold">إدارة الأعمال إلى إدارة الفرص</span>، وسعوا إلى دمج الذكاء الاصطناعي مع مبادئ الحوكمة الرشيدة والاستدامة وصناعة القرار الاستراتيجي.</p>
+                <p>يشغل الدكتور ماهر خضر منصب كبير خبراء استراتيجيات الذكاء الاصطناعي، ويقود عدداً من المبادرات الدولية الهادفة إلى تعزيز الثقة والحوكمة والأمن في تطبيقات الذكاء الاصطناعي، كما يشارك في الحوارات والمنتديات العالمية المعنية بمستقبل الذكاء الاصطناعي والتحول الرقمي. وهو مؤسس شبكة الحكمة الدولية Wisdom Net ومنصة Investraders، التي تهدف إلى بناء مجتمعات اقتصادية ذكية تربط الأفراد والمؤسسات عبر دوائر تفاعلية (Circles) تعزز فرص الاستثمار والتجارة وريادة الأعمال في عصر الذكاء الاصطناعي.</p>
+                <p>ويحاضر الدكتور ماهر خضر في مجالات الحوكمة المؤسسية، وإدارة التغيير، والاستشراف الاستراتيجي، والذكاء الاصطناعي، وإدارة المخاطر والأزمات، كما يقدم برامج تنفيذية واستشارات للقيادات العليا، ومجالس الإدارة، والجهات الحكومية، والقطاع الخاص، والمنظمات المهنية، انطلاقاً من إيمانه بأن المستقبل سيكون من نصيب المؤسسات التي تجمع بين الذكاء، والحكمة، والقدرة على تحويل التحديات إلى فرص مستدامة.</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
