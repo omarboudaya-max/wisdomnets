@@ -434,7 +434,7 @@ export default function EventRegistration() {
                 {/* 
                   NOTE: Replace "/trainer.png" with the actual URL of the uploaded image
                 */}
-                <img src="/trainer.png" alt="د. ماهر خضر" className="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10 border border-white/10" />
+                <img src="/trainer.jpeg" alt="د. ماهر خضر" className="w-full h-full object-cover rounded-2xl shadow-2xl relative z-10 border border-white/10" />
                 <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-transparent to-transparent rounded-2xl z-20" />
                 <div className="absolute -inset-4 border border-gold/20 rounded-2xl -z-10 transform rotate-3 transition-transform duration-500 hover:rotate-6" />
                 <div className="absolute -inset-4 border border-cyan-data/20 rounded-2xl -z-10 transform -rotate-3 transition-transform duration-500 hover:-rotate-6" />
