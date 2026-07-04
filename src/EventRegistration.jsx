@@ -491,7 +491,7 @@ export default function EventRegistration() {
       </section>
 
       {/* ── FOOTER ── */}
-      <footer className="py-12 bg-obsidian border-t border-white/[0.06]" dir="rtl">
+      <footer className="pt-12 pb-28 md:pb-12 bg-obsidian border-t border-white/[0.06]" dir="rtl">
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
             <div>
