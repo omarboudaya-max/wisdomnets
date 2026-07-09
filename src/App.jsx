@@ -361,7 +361,7 @@ function HumanMachineCoexistence() {
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }} className="mt-16 text-center max-w-3xl mx-auto">
           <p className="text-xl sm:text-2xl font-semibold leading-relaxed" style={{ color: 'rgba(15,23,42,0.75)', fontFamily: 'Playfair Display, Georgia, serif' }}>
             "Artificial Intelligence must evolve into{' '}
-            <span style={{ color: '#b8860b' }}>Artificial Wisdom</span> — where technology serves humanity, and humanity guides technology."
+            <a href="https://www.auditingartificialwisdom.com/" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: '#b8860b' }}>Artificial Wisdom</a> — where technology serves humanity, and humanity guides technology."
           </p>
         </motion.div>
       </div>
@@ -748,11 +748,13 @@ function ArtificialWisdom() {
           Beyond Artificial Intelligence
         </motion.span>
         <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }} className="text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-6" style={{ color: '#0f172a', fontFamily: 'Playfair Display, Georgia, serif' }}>
-          Artificial{' '}
-          <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #b8860b, #7c3aed)' }}>Wisdom</span>
+          <a href="https://www.auditingartificialwisdom.com/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+            Artificial{' '}
+            <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #b8860b, #7c3aed)' }}>Wisdom</span>
+          </a>
         </motion.h2>
         <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }} className="text-lg max-w-2xl mx-auto mb-12 leading-relaxed" style={{ color: 'rgba(15,23,42,0.65)' }}>
-          At Wisdom Net, we believe that Artificial Intelligence must evolve into <span className="font-semibold" style={{ color: '#b8860b' }}>Artificial Wisdom</span>. It is the next frontier of digital transformation and a key pillar of our long-term research and innovation agenda.
+          At Wisdom Net, we believe that Artificial Intelligence must evolve into <a href="https://www.auditingartificialwisdom.com/" target="_blank" rel="noopener noreferrer" className="font-semibold hover:underline" style={{ color: '#b8860b' }}>Artificial Wisdom</a>. It is the next frontier of digital transformation and a key pillar of our long-term research and innovation agenda.
         </motion.p>
         <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
           {AW_COMBINES.map((c, i) => (
