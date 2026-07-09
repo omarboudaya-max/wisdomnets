@@ -154,7 +154,7 @@ export default function EventRegistration() {
         dir="rtl"
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#hero" className="font-heading font-bold text-xl text-gold">Investraders</a>
+          <a href="https://www.investraders.net/" target="_blank" rel="noopener noreferrer" className="font-heading font-bold text-xl text-gold hover:underline">Investraders</a>
           <div className="hidden md:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
               <a key={link.href} href={link.href} className="text-platinum/60 text-sm hover:text-gold transition-colors">{link.label}</a>
@@ -198,7 +198,7 @@ export default function EventRegistration() {
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="font-heading font-bold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
             <span className="text-platinum">البرنامج الدولي لإعداد</span><br />
             <span className="text-gold">المدربين المعتمدين في</span><br />
-            <span className="text-cyan-data text-5xl md:text-7xl lg:text-8xl">Investraders</span>
+            <span className="text-cyan-data text-5xl md:text-7xl lg:text-8xl"><a href="https://www.investraders.net/" target="_blank" rel="noopener noreferrer" className="hover:underline text-inherit">Investraders</a></span>
           </motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-xl md:text-2xl text-gold/90 font-light mb-4 tracking-wide">
             Certified Investraders Master Trainer (CIMT)
@@ -534,7 +534,7 @@ export default function EventRegistration() {
         <div className="max-w-5xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
             <div>
-              <p className="text-gold font-heading font-bold text-lg mb-1">Investraders</p>
+              <p className="text-gold font-heading font-bold text-lg mb-1"><a href="https://www.investraders.net/" target="_blank" rel="noopener noreferrer" className="hover:underline text-inherit">Investraders</a></p>
               <p className="text-platinum/40 text-sm">تنظيم شبكة الحكمة الدولية — Wisdom Net</p>
               <p className="text-platinum/30 text-xs mt-1">Wisdom Net is a recognized Innovator in the Program of the AI Hub for Sustainable Development, UNDP, with International Tech-Partners like Microsoft, AWS and CENICA</p>
             </div>

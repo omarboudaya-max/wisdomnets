@@ -533,7 +533,9 @@ function InvestradersFlagship() {
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-5" style={{ color: '#0f172a', fontFamily: 'Playfair Display, Georgia, serif' }}>
             Introducing{' '}
-            <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #d4af37, #b8860b)' }}>Investraders</span>
+            <a href="https://www.investraders.net/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+              <span className="bg-clip-text text-transparent" style={{ backgroundImage: 'linear-gradient(135deg, #d4af37, #b8860b)' }}>Investraders</span>
+            </a>
           </h2>
           <p className="text-xl mb-6" style={{ color: 'rgba(15,23,42,0.65)' }}>The practical embodiment of the Wisdom Economy.</p>
           <p className="text-base max-w-2xl mx-auto leading-relaxed" style={{ color: 'rgba(15,23,42,0.55)' }}>
@@ -947,8 +949,8 @@ function InternationalRecognition() {
 ───────────────────────────────────────────── */
 const ARCHITECTURE = [
   { icon: Lightbulb, name: 'Wisdom Net', role: 'The global think tank and innovation company behind the Wisdom Economy.', color: '#b8860b' },
-  { icon: Rocket, name: 'Investraders', role: 'The flagship digital platform implementing the Wisdom Economy through AI-powered Circles.', color: '#2563eb' },
-  { icon: BrainCircuit, name: 'Artificial Wisdom Initiative', role: 'Research & governance initiative focused on AI Trust, AI Governance, Security, and Responsible AI.', color: '#7c3aed' },
+  { icon: Rocket, name: <a href="https://www.investraders.net/" target="_blank" rel="noopener noreferrer" className="hover:underline text-inherit">Investraders</a>, role: 'The flagship digital platform implementing the Wisdom Economy through AI-powered Circles.', color: '#2563eb' },
+  { icon: BrainCircuit, name: <a href="https://www.auditingartificialwisdom.com/" target="_blank" rel="noopener noreferrer" className="hover:underline text-inherit">Artificial Wisdom Initiative</a>, role: 'Research & governance initiative focused on AI Trust, AI Governance, Security, and Responsible AI.', color: '#7c3aed' },
   { icon: GraduationCap, name: 'Wisdom Net Academy', role: 'Executive education & certification arm, including the Certified Investraders Master Trainer (CIMT) program.', color: '#059669' },
 ];
 const JOIN_ACTIONS = [
@@ -975,7 +977,7 @@ function JoinWisdom() {
           <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] mb-10" style={{ color: 'rgba(15,23,42,0.4)' }}>A Unified Architecture</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {ARCHITECTURE.map((a, i) => (
-              <motion.div key={a.name} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -6 }}
+              <motion.div key={i} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -6 }}
                 className="rounded-2xl p-6 border" style={{ background: '#ffffff', borderColor: 'rgba(15,23,42,0.08)', boxShadow: '0 4px 24px rgba(15,23,42,0.05)' }}>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: `${a.color}18`, border: `1px solid ${a.color}33` }}>
                   <a.icon className="w-6 h-6" style={{ color: a.color }} />
